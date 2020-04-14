@@ -34,9 +34,9 @@ class Song
     @@count += 1
     @@genres << genre
     @@artists << artist
-    @@genre_count[genre] ||= 0
+    @@genre_count[genre] ||= 1
     @@genre_count[genre] += 1
-    @@artist_count[artist] ||= 0
+    @@artist_count[artist] ||= 1
     @@artist_count[artist] += 1
   end
 
